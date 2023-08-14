@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>grid-practice</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+      .profile-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 30px;
+        max-width: 900px;
+        
+      }
+
+      .profile-row {
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+        display:grid;
+        grid-template-rows: 300px 1fr;
+        flex-direction: column;
+              
+      }
+
+      .profile-pix {
+        width: 300px;
+        height: 300px;
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: cover;
+        
+      }
+
+      .profile-info {
+        font-family: Roboto, Arial;
+        padding-left: 10px;
+        margin-top: 10px;
+      }
+
+      .para {
+        font-size: 15px;
+        margin-top: 0;
+        margin-bottom: 5px;
+        font-size: 26px;
+        font-weight: bold;
+        
+      }
+
+      .para2 {
+        font-size: 20px;
+        color: rgb(68, 66, 66);
+        margin-top: 0px;
+        margin-bottom: 0px;
+        
+        
+      }
+
+      .mutual-friend {
+        display: grid;
+        grid-template-columns: 40px 1fr;
+        column-gap: 5px;
+        align-items: center;
+      }
+
+      .friend-pix {
+        width: 40px;
+        border-radius: 20px;
+        border-width: 2px;
+        border-color: white;
+        
+      }
+
+      .add-friend {
+        background-color: rgb(23, 120, 242);
+        width: 120px;
+        margin-top: 10px;
+        color: white;
+        border-radius: 5px;
+        text-align: center;
+        padding: 10px 15px 10px 15px;
+        font-size: 20px;
+        font-family: Roboto, Arial;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="profile-grid">
+      <div class="profile-row">
+        <div class="thumbnail">
+          <img class="profile-pix" src="IMG_6797.JPG" alt="">
+        </div>
+        <div class="profile-info">
+          <div>
+            <p class="para">Zahra</p>
+          </div>
+          <div class="mutual-friend">
+            <img class="friend-pix" src="thumbnail-cat.jfif" alt="">
+            <p class="para2">10 mutual friends</p>
+          </div>
+          <div>
+            <p class="add-friend">Add Friend</p>
+          </div>
+        </div>    
+      </div>
+
+      <div class="profile-row">
+        <div class="thumbnail">
+          <img class="profile-pix" src="IMG_6823.JPG" alt="">
+        </div>
+        <div class="profile-info">
+          <div>
+            <p class="para">Pearl</p>
+          </div>
+          <div class="mutual-friend">
+            <img class="friend-pix" src="thumbnail-cat.jfif" alt="">
+            <p class="para2">18 mutual friends</p>
+          </div>
+          <div>
+            <p class="add-friend">Add Friend</p>
+          </div>
+        </div>    
+      </div>
+
+      <div class="profile-row">
+        <div class="thumbnail">
+          <img class="profile-pix" src="IMG_6992.JPG" alt="">
+        </div>
+        <div class="profile-info">
+          <div>
+            <p class="para">Jamal</p>
+          </div>
+          <div class="mutual-friend">
+            <img class="friend-pix" src="thumbnail-cat.jfif" alt="">
+            <p class="para2">105 mutual friends</p>
+          </div>
+          <div>
+            <p class="add-friend">Add Friend</p>
+          </div>
+        </div>    
+      </div>
+    </div>
+
+    <!--<div style="display: grid; 
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 30px;
+    ">
+    <p style="background-color: pink;">Background1</p>
+    <p style="background-color: yellow;">Background2</p>
+    <p style="background-color: orange;">Background3</p>
+
+    </div>-->
+  </body>
+</html>
